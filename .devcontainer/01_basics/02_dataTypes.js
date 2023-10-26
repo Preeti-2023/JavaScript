@@ -52,3 +52,71 @@ let someNumber=33
 let stringNumber=String(someNumber)
 console.log(stringNumber);
 console.log(typeof stringNumber);
+
+
+
+//     Operations     
+
+let value=3
+let negValue=-value
+console.log(negValue);
+
+let str1="preeti"
+let str2= "vats"
+let str3= str1+str2
+console.log(str3);
+
+
+console.log("------");
+
+console.log("2">1);
+console.log("02">1);
+
+console.log("------");
+
+console.log(null>0);
+console.log(null==0);
+console.log((null>=0));
+console.log("------");
+console.log(undefined>0);
+console.log(undefined==0);
+console.log((undefined<0));
+
+// === operator will check both value and data type 
+//== opreator will only check value
+
+
+console.log("-------------");
+console.log(2===2);
+
+//Primitive
+//7 types String, number, undefined, boolean, null, symbol, bigint
+
+const id=Symbol('123')
+
+const anotherId= Symbol('123')
+
+console.log(id===anotherId);
+
+const bigNumber= 3333333333333337987n
+
+
+
+//non primitive refrence type
+//Arrays, Object, Functions 
+
+
+const arr1=["car","man","travel"];
+
+let obj={
+    name:"preeti",
+    rollno:1
+}
+
+let myFunction=function () {
+    console.log("hello world");
+
+}
+
+
+console.log(typeof myFunction );
