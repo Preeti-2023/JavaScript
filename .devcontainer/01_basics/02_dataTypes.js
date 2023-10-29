@@ -120,3 +120,54 @@ let myFunction=function () {
 
 
 console.log(typeof myFunction );
+
+
+
+//memory allocation 
+
+// stack(primitive type) , heap(non primitive)
+let userName="Preeti"
+let anotherUserName=userName;
+anotherUserName="Priya"
+console.log(userName);
+console.log(anotherUserName);
+
+let userOne={
+    email:"Prity@123.com",
+    upi:'p2142i'
+}
+
+let userTwo= userOne
+
+userTwo.email="priya@123.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+//`` backticks
+
+
+//String
+
+const studentName=new String("Preeti");
+const studentAge=25;
+console.log(studentAge);
+console.log(` name is ${studentName}  and age is ${studentAge} ` );
+
+const  studentName1= new String("Priya");
+
+console.log(studentName1);
+
+const gameName=new String('Prreti-vats-com')
+console.log(gameName[0]);
+console.log(gameName.__proto__);
+console.log(gameName.length);
+console.log(gameName.toUpperCase);
+console.log(gameName.charAt(2));
+console.log(gameName.indexOf('e'));
+
+console.log(gameName.slice(1,8));
+
+const anotherGame= gameName.slice(1,4)
+console.log(anotherGame);
+
+console.log(gameName.split('-'));
